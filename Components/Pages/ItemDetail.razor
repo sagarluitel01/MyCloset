@@ -1,0 +1,69 @@
+@page "/item/{id:guid}"
+@inject Services.ItemStateService ItemStateService
+@inject NavigationManager nav
+@inject Services.LoadingService LoadingService
+
+<h3>Item Details</h3>
+
+@if (item == null)
+{
+    <p class="text-muted">Item not found.</p>
+}
+else
+{
+    <div class="card mb-3" style="max-width: 720px;">
+        <div class="row g-0">
+            <div class="col-md-4 d-flex align-items-center justify-content-center p-2">
+                @if (!string.IsNullOrEmpty(item.ImagePath))
+                {
+                    <img src="@item.ImagePath" class="img-fluid" alt="Item image" style="max-height:240px; object-fit:contain;" />
+                }
+                else
+                {
+                    <div class="text-muted">No image</div>
+                }
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text"><strong>Category:</strong> @item.Category</p>
+                    <p class="card-text"><strong>Color:</strong> @item.Color</p>
+                    <p class="card-text"><strong>Size:</strong> @item.Size</p>
+                    <p class="card-text"><strong>Status:</strong> @item.Status?.Name</p>
+                    <p class="card-text"><strong>Times worn:</strong> @item.TimeWorn</p>
+                    <p class="card-text"><small class="text-muted">Last updated: @item.UpdateDateTime.ToLocalTime().ToString()</small></p>
+
+                    <button class="btn btn-secondary me-2" @onclick="GoBack">Back</button>
+                    <a class="btn btn-primary" href="/item/edit/@item.Id" @onclick="@(() => NavigateToEdit(item.Id))" @onclick:preventDefault="true" title="Edit"><span class="me-1">✏️</span> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public Guid id { get; set; }
+
+    private Models.Item? item;
+
+    protected override void OnParametersSet()
+    {
+        item = ItemStateService.Items.FirstOrDefault(i => i.Id == id);
+
+        // hide loading overlay when item is available
+        LoadingService.Hide();
+    }
+
+    private void GoBack()
+    {
+        nav.NavigateTo("/");
+    }
+
+    private async Task NavigateToEdit(Guid id)
+    {
+        LoadingService.Show();
+        await Task.Yield();
+        nav.NavigateTo($"/item/edit/{id}");
+    }
+}

@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign A9484FD23D4AD8BA6308A75B269A1096CF6A3E5A --entitlements /Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/ios-arm64/Entitlements.xcent /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/ios-arm64/MyCloset.app

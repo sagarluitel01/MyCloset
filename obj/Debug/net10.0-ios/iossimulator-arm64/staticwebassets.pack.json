@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/sagarluitel/.nuget/packages/microsoft.aspnetcore.components.webview/10.0.0/staticwebassets/blazor.modules.json",
+      "PackagePath": "staticwebassets/_framework/blazor.modules.json"
+    },
+    {
+      "Id": "/Users/sagarluitel/.nuget/packages/microsoft.aspnetcore.components.webview/10.0.0/staticwebassets/blazor.webview.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webview.js"
+    },
+    {
+      "Id": "/Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/iossimulator-arm64/scopedcss/bundle/MyCloset.styles.css",
+      "PackagePath": "staticwebassets/MyCloset.styles.css"
+    },
+    {
+      "Id": "/Users/sagarluitel/Desktop/Projects/MyCloset/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/sagarluitel/Desktop/Projects/MyCloset/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/sagarluitel/Desktop/Projects/MyCloset/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/sagarluitel/Desktop/Projects/MyCloset/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "obj/Debug/net10.0-ios/iossimulator-arm64/staticwebassets/msbuild.MyCloset.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net10.0-ios/iossimulator-arm64/staticwebassets/msbuild.MyCloset.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net10.0-ios/iossimulator-arm64/staticwebassets/msbuild.build.MyCloset.props",
+      "PackagePath": "build\\MyCloset.props"
+    },
+    {
+      "Id": "obj/Debug/net10.0-ios/iossimulator-arm64/staticwebassets/msbuild.buildMultiTargeting.MyCloset.props",
+      "PackagePath": "buildMultiTargeting\\MyCloset.props"
+    },
+    {
+      "Id": "obj/Debug/net10.0-ios/iossimulator-arm64/staticwebassets/msbuild.buildTransitive.MyCloset.props",
+      "PackagePath": "buildTransitive\\MyCloset.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

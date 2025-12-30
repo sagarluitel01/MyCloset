@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/MyCloset.app/libSystem.Net.Security.Native.dylib

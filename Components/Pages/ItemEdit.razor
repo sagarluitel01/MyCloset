@@ -1,0 +1,153 @@
+@page "/item/edit/{id:guid}"
+@inject Services.ItemStateService ItemStateService
+@inject NavigationManager nav
+@inject IJSRuntime js
+@inject Services.LoadingService LoadingService
+
+<h3>Edit Item</h3>
+
+@if (editItem == null)
+{
+    <p class="text-muted">Item not found.</p>
+}
+else
+{
+    <EditForm Model="editItem" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <InputText id="name" class="form-control" @bind-Value="editItem.Name" />
+        </div>
+        <div>
+            <label for="timeWorn" class="form-label">Times Worn</label>
+            <InputNumber id="timeWorn" class="form-control" @bind-Value="editItem.TimeWorn" />
+        </div>
+        <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <InputText id="category" class="form-control" @bind-Value="editItem.Category" />
+        </div>
+
+        <div class="mb-3">
+            <label for="color" class="form-label">Color</label>
+            <InputText id="color" class="form-control" @bind-Value="editItem.Color" />
+        </div>
+
+        <div class="mb-3">
+            <label for="size" class="form-label">Size</label>
+            <InputText id="size" class="form-control" @bind-Value="editItem.Size" />
+        </div>
+
+        <div class="mb-3">
+            <label for="status" class="form-label">Status</label>
+            <select class="form-select mb-2" @bind="status">
+                @foreach(var s in ItemStateService.GetAllStatuses()){
+                    <option value="@s.Name">@s.Name</option>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Image</label>
+            <InputFile OnChange="OnInputFileChange" accept="image/*" />
+            <div class="mt-2">
+                <label class="form-label">Or enter image URL</label>
+                <InputText class="form-control" @bind-Value="editItem.ImagePath" />
+            </div>
+            @if (!string.IsNullOrEmpty(editItem.ImagePath))
+            {
+                <div class="mt-2">
+                    <img src="@editItem.ImagePath" alt="Preview" style="max-width:200px; max-height:200px; object-fit:contain;" />
+                </div>
+            }
+        </div>
+
+        <button type="submit" class="btn btn-primary me-2">Save</button>
+        <button type="button" class="btn btn-danger" @onclick="ConfirmDelete">Delete</button>
+        <button type="button" class="btn btn-secondary ms-2" @onclick="GoBack">Cancel</button>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public Guid id { get; set; }
+
+    private Models.Item? editItem;
+    private string status = string.Empty;
+
+    protected override void OnParametersSet()
+    {
+        var src = ItemStateService.GetItemById(id);
+        if (src != null)
+        {
+            // make a shallow copy so edits aren't applied until saved
+            editItem = new Models.Item
+            {
+                Id = src.Id,
+                Name = src.Name,
+                Category = src.Category,
+                Color = src.Color,
+                Size = src.Size,
+                ImagePath = src.ImagePath,
+                TimeWorn = src.TimeWorn,
+                Status = src.Status,
+                UpdateDateTime = src.UpdateDateTime
+            };
+            status = editItem.Status?.Name ?? string.Empty;
+        }
+
+        // ensure loading overlay is hidden when this page is ready
+        LoadingService.Hide();
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        if (editItem == null)
+            return;
+
+        var itemStatus = ItemStateService.GetStatusByName(status);
+        if (itemStatus != null)
+        {
+            editItem.Status = itemStatus;
+        }
+
+        LoadingService.Show();
+        await Task.Run(() => ItemStateService.UpdateItem(editItem));
+        LoadingService.Hide();
+
+        nav.NavigateTo($"/item/{editItem.Id}");
+    }
+
+    private async Task OnInputFileChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        if (file == null || editItem == null)
+            return;
+        using var ms = new System.IO.MemoryStream();
+        await file.OpenReadStream(1024 * 1024 * 15).CopyToAsync(ms);
+        var bytes = ms.ToArray();
+        editItem.ImagePath = $"data:{file.ContentType};base64,{Convert.ToBase64String(bytes)}";
+        StateHasChanged();
+    }
+
+    private async Task ConfirmDelete()
+    {
+        if (editItem == null)
+            return;
+
+        var ok = await js.InvokeAsync<bool>("confirm", "Are you sure you want to delete this item?");
+        if (ok)
+        {
+            LoadingService.Show();
+            await Task.Run(() => ItemStateService.DeleteItem(editItem.Id));
+            LoadingService.Hide();
+            nav.NavigateTo("/");
+        }
+    }
+
+    private void GoBack()
+    {
+        nav.NavigateTo($"/item/{id}");
+    }
+}

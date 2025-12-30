@@ -1,0 +1,47 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="512" height="512" fill="#0F0F0F"/>
+
+  <!-- Glow -->
+  <radialGradient id="glow" cx="50%" cy="45%" r="40%">
+    <stop offset="0%" stop-color="#F2C94C" stop-opacity="0.35" />
+    <stop offset="100%" stop-color="#0F0F0F" stop-opacity="0" />
+  </radialGradient>
+  <rect x="0" y="0" width="512" height="512" fill="url(#glow)"/>
+
+  <!-- Enlarged Closet Body -->
+  <rect x="96" y="96" width="320" height="320" rx="28" fill="#1C1C1C" stroke="#2A2A2A" stroke-width="8"/>
+
+  <!-- Divider -->
+  <rect x="252" y="108" width="8" height="296" fill="#2A2A2A"/>
+
+  <!-- Left Hanging Bar -->
+  <rect x="124" y="148" width="120" height="8" rx="4" fill="#2A2A2A"/>
+
+  <!-- Shirts -->
+  <rect x="132" y="164" width="32" height="80" rx="6" fill="#EAEAEA"/>
+  <rect x="172" y="164" width="32" height="80" rx="6" fill="#EAEAEA"/>
+  <rect x="212" y="164" width="32" height="80" rx="6" fill="#F2C94C"/>
+
+  <!-- Left Drawers -->
+  <rect x="132" y="260" width="104" height="48" rx="8" fill="#2A2A2A"/>
+  <rect x="132" y="316" width="104" height="48" rx="8" fill="#2A2A2A"/>
+
+  <!-- Right Shelves -->
+  <rect x="280" y="160" width="112" height="40" rx="8" fill="#2A2A2A"/>
+  <rect x="280" y="216" width="112" height="40" rx="8" fill="#F2C94C"/>
+
+  <!-- Shoes -->
+  <rect x="292" y="280" width="40" height="28" rx="6" fill="#EAEAEA"/>
+  <rect x="340" y="280" width="40" height="28" rx="6" fill="#EAEAEA"/>
+  <!-- App Name -->
+  <text x="256" y="460"
+        text-anchor="middle"
+        font-size="36"
+        font-family="Segoe UI, Roboto, Arial, sans-serif"
+        font-weight="600"
+        fill="#EAEAEA"
+        letter-spacing="1">
+    MyCloset
+  </text>
+</svg>
