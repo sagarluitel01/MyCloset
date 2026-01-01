@@ -1,5 +1,25 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\.gitignore'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MyCloset</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>.gitignore</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1yjl4tk4ab</Fingerprint>
+      <Integrity>x0+5+6sXijKJmnA8YOBbU6MpyXatQKKqxxVDROuYxqY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>2910</FileLength>
+      <LastWriteTime>Tue, 30 Dec 2025 23:59:30 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\.gitignore'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))">
       <SourceType>Package</SourceType>
       <SourceId>MyCloset</SourceId>
@@ -32,12 +52,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>iaysdlfwqx</Fingerprint>
-      <Integrity>mi0J3bi39gEQj063mhiukQIN8vZXNNV8952BTfB0LnA=</Integrity>
+      <Fingerprint>9ovz9i2668</Fingerprint>
+      <Integrity>GVwpn51dCdElaERxRrauz+OjLhcexIQewrtrbi/uDV0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>951</FileLength>
-      <LastWriteTime>Tue, 30 Dec 2025 23:51:41 GMT</LastWriteTime>
+      <FileLength>1091</FileLength>
+      <LastWriteTime>Wed, 31 Dec 2025 00:10:51 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap.min.css'))">

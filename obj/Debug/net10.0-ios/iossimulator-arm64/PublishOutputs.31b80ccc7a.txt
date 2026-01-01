@@ -56,6 +56,8 @@
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.Extensions.FileProviders.Physical.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.Extensions.FileSystemGlobbing.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.Extensions.Hosting.Abstractions.dll
+/Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.Extensions.Localization.dll
+/Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.Extensions.Localization.Abstractions.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.Extensions.Logging.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.Extensions.Logging.Abstractions.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.Extensions.Logging.Debug.dll
@@ -69,6 +71,7 @@
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.Maui.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.Maui.Essentials.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.Maui.Graphics.dll
+/Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/MudBlazor.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/MyCloset.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.CSharp.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/publish/../MyCloset.app/Microsoft.VisualBasic.Core.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HlYKrgjY3Hw=",
+  "dgSpecHash": "HJLhYT58ql8=",
   "success": true,
   "projectFilePath": "/Users/sagarluitel/Desktop/Projects/MyCloset/MyCloset.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,8 @@
     "/Users/sagarluitel/.nuget/packages/microsoft.extensions.fileproviders.physical/10.0.0/microsoft.extensions.fileproviders.physical.10.0.0.nupkg.sha512",
     "/Users/sagarluitel/.nuget/packages/microsoft.extensions.filesystemglobbing/10.0.0/microsoft.extensions.filesystemglobbing.10.0.0.nupkg.sha512",
     "/Users/sagarluitel/.nuget/packages/microsoft.extensions.hosting.abstractions/10.0.0/microsoft.extensions.hosting.abstractions.10.0.0.nupkg.sha512",
+    "/Users/sagarluitel/.nuget/packages/microsoft.extensions.localization/9.0.1/microsoft.extensions.localization.9.0.1.nupkg.sha512",
+    "/Users/sagarluitel/.nuget/packages/microsoft.extensions.localization.abstractions/9.0.1/microsoft.extensions.localization.abstractions.9.0.1.nupkg.sha512",
     "/Users/sagarluitel/.nuget/packages/microsoft.extensions.logging/10.0.0/microsoft.extensions.logging.10.0.0.nupkg.sha512",
     "/Users/sagarluitel/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.0/microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
     "/Users/sagarluitel/.nuget/packages/microsoft.extensions.logging.debug/10.0.0/microsoft.extensions.logging.debug.10.0.0.nupkg.sha512",
@@ -45,6 +47,7 @@
     "/Users/sagarluitel/.nuget/packages/microsoft.maui.graphics/10.0.1/microsoft.maui.graphics.10.0.1.nupkg.sha512",
     "/Users/sagarluitel/.nuget/packages/microsoft.maui.resizetizer/10.0.1/microsoft.maui.resizetizer.10.0.1.nupkg.sha512",
     "/Users/sagarluitel/.nuget/packages/microsoft.net.illink.tasks/10.0.1/microsoft.net.illink.tasks.10.0.1.nupkg.sha512",
+    "/Users/sagarluitel/.nuget/packages/mudblazor/8.15.0/mudblazor.8.15.0.nupkg.sha512",
     "/Users/sagarluitel/.nuget/packages/xamarin.android.glide/4.16.0.14/xamarin.android.glide.4.16.0.14.nupkg.sha512",
     "/Users/sagarluitel/.nuget/packages/xamarin.android.glide.annotations/4.16.0.14/xamarin.android.glide.annotations.4.16.0.14.nupkg.sha512",
     "/Users/sagarluitel/.nuget/packages/xamarin.android.glide.disklrucache/4.16.0.14/xamarin.android.glide.disklrucache.4.16.0.14.nupkg.sha512",

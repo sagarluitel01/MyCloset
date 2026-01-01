@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyCloset")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+861a4145f49445755ed143b8b8b871efb61b334b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyCloset")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyCloset")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using MudBlazor.Services;
 
 namespace MyCloset;
 
@@ -16,7 +17,8 @@ public static class MauiProgram
 
 		builder.Services.AddMauiBlazorWebView();
 		builder.Services.AddSingleton<Services.ItemStateService>();
-			builder.Services.AddSingleton<Services.LoadingService>();
+		builder.Services.AddSingleton<Services.LoadingService>();
+		builder.Services.AddMudServices();
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
 		builder.Logging.AddDebug();

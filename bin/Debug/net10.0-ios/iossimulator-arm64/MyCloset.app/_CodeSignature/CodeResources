@@ -138,11 +138,11 @@
 		</data>
 		<key>Microsoft.Extensions.Localization.Abstractions.dll</key>
 		<data>
-		n5vYCd7Tgkhu/102t+CbN0fvIig=
+		DAZ2U0j4Uo/zZf6ugyPlMA+6bxk=
 		</data>
 		<key>Microsoft.Extensions.Localization.dll</key>
 		<data>
-		b6Be/gp6R35rvLzElrT6JRInCVw=
+		b42t16aj5fSl1wafJSd6Jb7ZgTg=
 		</data>
 		<key>Microsoft.Extensions.Logging.Abstractions.dll</key>
 		<data>
@@ -226,15 +226,15 @@
 		</data>
 		<key>MudBlazor.dll</key>
 		<data>
-		Av6oYeHTWJj3upjAHpDe7Mdn2SI=
+		eLQtO4P6sxvMeOnmLN2t6JHhxg4=
 		</data>
 		<key>MyCloset.dll</key>
 		<data>
-		hnqmML30C+ScZamQWp6tHANTBg0=
+		5etYQFr5iTKdMSm9D4BiRFCTvFY=
 		</data>
 		<key>MyCloset.pdb</key>
 		<data>
-		YGyfNzIwKjieo9M3tG+K0Jp9P+Q=
+		IKbn7eAGWA3UY80KSyQyRnr/puQ=
 		</data>
 		<key>OpenSans-Regular.ttf</key>
 		<data>
@@ -1136,6 +1136,10 @@
 		<data>
 		oCIIkdcQRn8VqxS7jQr3BZBGlDg=
 		</data>
+		<key>wwwroot/.gitignore</key>
+		<data>
+		fDlO1iXFaHkXGQYbzc9pT2NBbbM=
+		</data>
 		<key>wwwroot/MyCloset.styles.css</key>
 		<data>
 		09tS732w2YUoTgwYap5cpOEaVBY=
@@ -1146,11 +1150,11 @@
 		</data>
 		<key>wwwroot/_content/MudBlazor/MudBlazor.min.css</key>
 		<data>
-		tPwPXLG8kKPU3OpjYFahVOwcz5A=
+		KeZZ5Fp9OoBRMh0xRCOf87CgYmA=
 		</data>
 		<key>wwwroot/_content/MudBlazor/MudBlazor.min.js</key>
 		<data>
-		KLfszQF0vHAklm60JeP5EZyiPys=
+		ozygSyB53dI2KTTiLplj3LVSCR8=
 		</data>
 		<key>wwwroot/_framework/blazor.modules.json</key>
 		<data>
@@ -1166,7 +1170,7 @@
 		</data>
 		<key>wwwroot/index.html</key>
 		<data>
-		qoIlU802GkLSCEHpgRilFpehIxY=
+		UKv4B73OVilT6+ExxGknxGHCUns=
 		</data>
 		<key>wwwroot/lib/bootstrap/dist/css/bootstrap.min.css</key>
 		<data>
@@ -1419,14 +1423,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bn6mdZHE8jDMmYsuA3W5dLp9G1P2z8ukTk7MTSo7G6o=
+			bwamQLkN1u3D5w4PmlTCUIMo2HSZL3gZFVKTJugDu9s=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Localization.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ISH3/t6SDTHRIgCdVpoojnejrc46D+nMqHI5h1Ep+J0=
+			SA3Rme3Bpo0Zh/dT0KU8JahFroGxFHPuTqST+hGC+Zo=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Logging.Abstractions.dll</key>
@@ -1573,21 +1577,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WuZcTQaiSrU0MSVl/CluAps+e6Fi9gk4Npr+7+uE0zs=
+			mtyraoXoF0WrC16uY+/wLm8fojOoRcizBX7rtZo0Eis=
 			</data>
 		</dict>
 		<key>MyCloset.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/8DIcU1oWu/R4SraA+A/iqvbqFpnJoXv82jUH2Bzf5s=
+			Kbc0grDWv6agqd8YZkYusMlrcNG07EsZFMRPo5+LLwE=
 			</data>
 		</dict>
 		<key>MyCloset.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NrzwtGDjXy3XXgdHiaSrOWP/WPqJbctFuLxZmV6zmHo=
+			xUSFbgGniW9OgEX4sA6AxVU1jN6SPg2FWiXdc9x03os=
 			</data>
 		</dict>
 		<key>OpenSans-Regular.ttf</key>
@@ -3158,6 +3162,13 @@
 			R5TZsaOC07J9pdF+Gn4MBU1R8efdfM0tbrTmYd3B/3o=
 			</data>
 		</dict>
+		<key>wwwroot/.gitignore</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x0+5+6sXijKJmnA8YOBbU6MpyXatQKKqxxVDROuYxqY=
+			</data>
+		</dict>
 		<key>wwwroot/MyCloset.styles.css</key>
 		<dict>
 			<key>hash2</key>
@@ -3176,14 +3187,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IIGBY9LTa+oVA0VKnr+5fWTNpJNXNBDe88zJsYMPODM=
+			ZzHmYioOIMEX9F8thiw1Sc+cGGFHLtMWI4q4uvO13CQ=
 			</data>
 		</dict>
 		<key>wwwroot/_content/MudBlazor/MudBlazor.min.js</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tUWo7g42bWaYCpaMaLEgcGlHEFLeQulWJPXYkbancCY=
+			zR6goaoMpR/YVMMSTfCmVNo3kuPgOkjF/ovhkUhAkbk=
 			</data>
 		</dict>
 		<key>wwwroot/_framework/blazor.modules.json</key>
@@ -3211,7 +3222,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mi0J3bi39gEQj063mhiukQIN8vZXNNV8952BTfB0LnA=
+			GVwpn51dCdElaERxRrauz+OjLhcexIQewrtrbi/uDV0=
 			</data>
 		</dict>
 		<key>wwwroot/lib/bootstrap/dist/css/bootstrap.min.css</key>

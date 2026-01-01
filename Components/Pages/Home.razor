@@ -17,51 +17,78 @@
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Times Worn</th>
-                <th>Image</th>
-                <th>Status</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in ItemStateService.Items)
+    
+    <MudTable Items="ItemStateService.Items"
+          Dense="true"
+          Hover="true"
+          Bordered="true"
+          Breakpoint="Breakpoint.None">
+    <HeaderContent>
+        <MudTh>Name</MudTh>
+        <MudTh>Times Worn</MudTh>
+        <MudTh>Status</MudTh>
+        <MudTh>Image</MudTh>
+    </HeaderContent>
+
+    <RowTemplate>
+        <MudTd>
+            <a href="@($"/item/{context.Id}")" class="table-a">@context.Name</a>
+        </MudTd>
+
+        <MudTd>
+            <div class="d-flex align-items-center">
+                <span class="me-2">@context.TimeWorn</span>
+                <MudIconButton Icon="@Icons.Material.Filled.Add"
+                               Size="Size.Small"
+                               OnClick="@(async () => await IncreaseTimeWorn(context.Id))" />
+
+            </div>
+        </MudTd> 
+        <MudTd>
+            <MudSelect T="string"
+                    Value="@context.Status?.Name"
+                    ValueChanged="@(async (string val) => await OnStatusChanged(context.Id, val))"
+                    Dense="true"
+                    Variant="Variant.Text">
+                @foreach (var s in ItemStateService.GetAllStatuses())
+                {
+                    <MudSelectItem T="string" Value="@s.Name">@s.Name</MudSelectItem>
+                }
+            </MudSelect>
+        </MudTd>
+        <MudTd>
+            @if (!string.IsNullOrEmpty(context.ImagePath))
             {
-                <tr>
-                    <td>
-                        <a href="/item/@item.Id" @onclick="@(() => NavigateToItem(item.Id))" @onclick:preventDefault="true">@item.Name</a>
-                    </td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <span class="me-2">@item.TimeWorn</span>
-                            <button type="button" class="btn btn-sm btn-outline-primary" title="Increase" @onclick="() => IncreaseTimeWorn(item.Id)">+
-                            </button>
-                        </div>
-                    </td>
-                    <td>
-                        @if (!string.IsNullOrEmpty(item.ImagePath))
-                        {
-                            <img src="@item.ImagePath" alt="Item image" style="max-width:60px; max-height:60px; object-fit:contain;" />
-                        }
-                    </td>
-                    <td>@item.Status?.Name</td>
-                    <td>
-                        <a class="btn btn-sm btn-secondary" href="/item/edit/@item.Id" @onclick="@(() => NavigateToEdit(item.Id))" @onclick:preventDefault="true" title="Edit">
-                            <span class="me-1">✏️</span>
-                        </a>
-                        <button type="button" class="btn btn-sm btn-outline-danger ms-2" @onclick="() => ConfirmDelete(item.Id)" title="Delete">
-                            <span class="me-1">🗑️</span>
-                        </button>
-                    </td>
-                </tr>
+                <img src="@context.ImagePath" style="max-width:60px;" />
             }
-        </tbody>
-    </table>
+        </MudTd>
+
+    @* TODO: Remove this action column & make status editable inline *@
+        @* <MudTd>
+            <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                           OnClick="@(() => NavigateToEdit(context.Id))" />
+            <MudIconButton Icon="@Icons.Material.Filled.Delete"
+                           Color="Color.Error"
+                           OnClick="@(() => ConfirmDelete(context.Id))" />
+        </MudTd> *@
+    </RowTemplate>
+</MudTable>
 }
 
+<style>
+    .table-a{
+        color: #006bb7;
+        text-decoration: underline;
+    }
+    .mud-popover.mud-popover-open{
+        width: 120px;
+        max-width: 200px !important;
+    }
+    .mud-paper{
+        background-color: white;
+
+    }
+</style>
 @code {
     private async Task ConfirmDelete(Guid id)
     {
@@ -101,5 +128,21 @@ else
         LoadingService.Show();
         await Task.Yield();
         nav.NavigateTo($"/item/edit/{id}");
+    }
+
+    private async Task OnStatusChanged(Guid id, string newStatus)
+    {
+        if (string.IsNullOrWhiteSpace(newStatus))
+            return;
+
+        var item = ItemStateService.GetItemById(id);
+        if (item?.Status?.Name == newStatus)
+            return;
+
+        LoadingService.Show();
+        await Task.Yield();
+        await Task.Run(() => ItemStateService.UpdateItemStatus(id, newStatus));
+        LoadingService.Hide();
+        StateHasChanged();
     }
 }

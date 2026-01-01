@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/MyCloset.styles.css"
     },
     {
+      "Id": "/Users/sagarluitel/Desktop/Projects/MyCloset/wwwroot/.gitignore",
+      "PackagePath": "staticwebassets/.gitignore"
+    },
+    {
       "Id": "/Users/sagarluitel/Desktop/Projects/MyCloset/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },

@@ -362,6 +362,7 @@
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/ios-arm64/Microsoft.Extensions.Localization.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/ios-arm64/Microsoft.Extensions.Localization.Abstractions.dll
 /Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/ios-arm64/MudBlazor.dll
+/Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/ios-arm64/MyCloset.sourcelink.json
 /Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/ios-arm64/resourcestamps/Microsoft.Extensions.Localization.Abstractions.stamp
 /Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/ios-arm64/resourcestamps/Microsoft.Extensions.Localization.stamp
 /Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/ios-arm64/resourcestamps/MudBlazor.stamp

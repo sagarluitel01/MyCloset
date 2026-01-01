@@ -360,3 +360,10 @@
 /Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/iossimulator-arm64/MyCloset.pdb
 /Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/iossimulator-arm64/MyCloset.genruntimeconfig.cache
 /Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/iossimulator-arm64/ref/MyCloset.dll
+/Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/Microsoft.Extensions.Localization.dll
+/Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/Microsoft.Extensions.Localization.Abstractions.dll
+/Users/sagarluitel/Desktop/Projects/MyCloset/bin/Debug/net10.0-ios/iossimulator-arm64/MudBlazor.dll
+/Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/iossimulator-arm64/MyCloset.sourcelink.json
+/Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/iossimulator-arm64/resourcestamps/Microsoft.Extensions.Localization.Abstractions.stamp
+/Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/iossimulator-arm64/resourcestamps/Microsoft.Extensions.Localization.stamp
+/Users/sagarluitel/Desktop/Projects/MyCloset/obj/Debug/net10.0-ios/iossimulator-arm64/resourcestamps/MudBlazor.stamp
